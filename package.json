@@ -1,0 +1,24 @@
+{
+  "name": "genji4rn",
+  "version": "1.0.0",
+  "description": "one way to use redux easier in react-native",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com/zhang759740844/genji4rn.git"
+  },
+  "keywords": [
+    "redux",
+    "react-native",
+    "react-navigation"
+  ],
+  "author": "zachary.zhang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zhang759740844/genji4rn/issues"
+  },
+  "homepage": "https://github.com/zhang759740844/genji4rn#readme"
+}
