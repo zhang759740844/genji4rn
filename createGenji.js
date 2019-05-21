@@ -58,9 +58,9 @@ class Genji {
     this._mergeReducers(this._reducers, _arr, _temp)
 
     // 注册全局的 handler
-    if (module.publicHandlers && Array.isArray(module.publicHandlers)) {
-      module.publicHandlers.map((item) => {
-        GlobalContext.registerHandler(namespace.replace(/\//g, '.') + '.' + item.name, item.action)
+    if (module.models.publicHandlers && Array.isArray(module.models.publicHandlers)) {
+      module.models.publicHandlers.map((item) => {
+        GlobalContext.registerHandler(namespace.replace(/\//g, '/') + '/' + item.name, item.action)
       })
     }
   }
@@ -93,7 +93,6 @@ class Genji {
     this._store = createStore(this.getReducer(), composeWithDevTools(
       applyMiddleware(...middlewares)
     ))
-    console.log(this._store)
     return this._store
   }
 

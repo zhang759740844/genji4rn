@@ -38,9 +38,9 @@ export default function (mapStateToProps, model) {
         let globalHandler = GlobalContext.getHandler(key.handler)
         if (globalHandler) {
           if (key.validate) {
-            actionCreators[key.name] = createAction(model.namespace + '/' + key.name, globalHandler, key.validate)
+            actionCreators[key.name] = createAction(key.handler, globalHandler, key.validate)
           } else {
-            actionCreators[key.name] = createAction(model.namespace + '/' + key.name, globalHandler)
+            actionCreators[key.name] = createAction(key.handler, globalHandler)
           }
         }
       } else {
