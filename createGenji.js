@@ -106,9 +106,7 @@ class Genji {
       render () {
         return (
           <Provider store={store}>
-            <TopLevelNavigator
-              ref={navigationRef => { setTopLevelNavigator(navigationRef) }}
-            />
+            <TopLevelNavigator />
           </Provider>
         )
       }

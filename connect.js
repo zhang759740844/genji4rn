@@ -2,6 +2,7 @@ import { connect } from 'react-redux'
 import { createAction } from 'redux-actions'
 import { bindActionCreators } from 'redux'
 import GlobalContext from './global'
+import { withNavigation } from 'react-navigation'
 
 /**
  * 封装了 react-redux 提供的 connect 方法，简化了 mapDispatchToProps 的操作
@@ -49,8 +50,14 @@ export default function (mapStateToProps, model) {
       }
     })
     const mapDispatchToProps = (dispatch) => bindActionCreators(actionCreators, dispatch)
-    return connect(mapStateToProps, mapDispatchToProps)
+    let connectedMap = connect(mapStateToProps, mapDispatchToProps)
+    return function (component) {
+      return withNavigation(connectedMap(component))
+    }
   } else {
-    return connect(mapStateToProps)
+    let connectedMap = connect(mapStateToProps)
+    return function (component) {
+      return withNavigation(connectedMap(component))
+    }
   }
 }

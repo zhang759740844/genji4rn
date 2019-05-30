@@ -42,7 +42,7 @@ module.exports = {
   handlers: [
     {name: 'checkToken', action: checkToken},
     {name: 'login', action: login},
-    {name: 'checkWxLoginAuth', handler: checkWxLoginAuth}
+    {name: 'checkWxLoginAuth', handler: 'checkWxLoginAuth'}
   ],
   reducers: {
   },
@@ -56,7 +56,7 @@ module.exports = {
 2. state: 注册到 store 中的值
 3. handlers: `mapDispatchToProps` 的提供者，`name` 为方法名，`action` 为具体的方法。
 4. reducers: redux 中改变 store 状态的方法。另外如果 reduces 的键以 `/` 开头，则可以监听非本模块的 action。
-5. publicHandlers: 全局的 handlers，任意模块都能使用这个方法。比如上面 `{name: 'checkWxLoginAuth', handler: checkWxLoginAuth}` 就是调用 publicHandlers 中的方法。
+5. publicHandlers: 全局的 handlers，任意模块都能使用这个方法。比如上面 `{name: 'checkWxLoginAuth', handler: 'checkWxLoginAuth'}` 就是调用 publicHandlers 中的方法。
 
 > 补充，全局 reducer 和 publicHandler 是非常有用的两个功能。它们分别对应着两种常用的场景。
 >
