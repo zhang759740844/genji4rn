@@ -1,6 +1,6 @@
 {
   "name": "genji4rn",
-  "version": "1.2.0",
+  "version": "1.2.5",
   "description": "one way to use redux easier in react-native",
   "main": "index.js",
   "scripts": {

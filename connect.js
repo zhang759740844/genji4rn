@@ -51,13 +51,21 @@ export default function (mapStateToProps, model) {
     })
     const mapDispatchToProps = (dispatch) => bindActionCreators(actionCreators, dispatch)
     let connectedMap = connect(mapStateToProps, mapDispatchToProps)
-    return function (component) {
-      return withNavigation(connectedMap(component))
+    return function (component, withNavi = true) {
+      if (withNavi) {
+        return withNavigation(connectedMap(component))
+      } else {
+        return connectedMap(component)
+      }
     }
   } else {
     let connectedMap = connect(mapStateToProps)
-    return function (component) {
-      return withNavigation(connectedMap(component))
+    return function (component, withNavi = true) {
+      if (withNavi) {
+        return withNavigation(connectedMap(component))
+      } else {
+        return connectedMap(component)
+      }
     }
   }
 }

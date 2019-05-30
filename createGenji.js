@@ -5,7 +5,6 @@ import { composeWithDevTools } from 'redux-devtools-extension'
 import { handleActions } from 'redux-actions'
 import Plugin from './plugin'
 import GlobalContext from './global'
-import { setTopLevelNavigator } from './router'
 
 class Genji {
   constructor () {
