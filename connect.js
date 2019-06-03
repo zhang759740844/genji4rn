@@ -71,7 +71,7 @@ export default function (mapStateToProps, model) {
   } else {
     let connectedMap = connect(mapStateToProps)
     return function (component) {
-      return withNavigation(connectedMap(component))
+      return withNavigation(withGenji(connectedMap(component)))
     }
   }
 }

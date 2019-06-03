@@ -5,7 +5,7 @@ import { composeWithDevTools } from 'redux-devtools-extension'
 import { handleActions } from 'redux-actions'
 import Plugin from './plugin'
 import GlobalContext from './global'
-import {createStackNavigator} from 'react-navigation'
+import {createStackNavigator, createSwitchNavigator} from 'react-navigation'
 import invariant from 'invariant'
 import GenjiNavigation from './genjiNavigation'
 import Constant from './constant'
@@ -115,11 +115,17 @@ class Genji {
    * 最基础的获取 store 的方法
    * return React.Component
    */
-  start (TopLevelNavigator) {
+  start (BusinessNavigator) {
     const store = this.getStore()
+    const NewTopLevelNavigator = createSwitchNavigator({
+      [Constant.businessNavigator]: BusinessNavigator
+    }, {
+      initialRouteName: Constant.businessNavigator,
+      navigationOptions: {header: null}
+    })
     return (
       <Provider store={store}>
-        <TopLevelNavigator />
+        <NewTopLevelNavigator />
       </Provider>
     )
   }
