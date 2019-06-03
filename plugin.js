@@ -6,7 +6,7 @@ class Plugin {
   }
 
   use (plugin) {
-    invariant(Array.isArray(plugin), 'plugin.use: plugin should be Array')
+    invariant(Array.isArray(plugin), 'zachary 抛出: plugin 必须是数组类型')
     this.hooks.push(...plugin)
   }
 

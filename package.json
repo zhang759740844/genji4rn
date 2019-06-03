@@ -1,24 +1,59 @@
 {
-  "name": "genji4rn",
-  "version": "1.2.5",
+  "_from": "genji4rn",
+  "_id": "genji4rn@2.0.1",
+  "_inBundle": false,
+  "_integrity": "sha512-oWA5sVMdGjEDQeYCUHM6BMBXq2ojdJtaZEHu1PB4e1ncWeECWw7jrM5843Mz3s6P3jlswzTY7a9s23BqTPHs0g==",
+  "_location": "/genji4rn",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "genji4rn",
+    "name": "genji4rn",
+    "escapedName": "genji4rn",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/genji4rn/-/genji4rn-2.0.1.tgz",
+  "_shasum": "67943b8fe3a0cb493909636e7a17ac51d3b948dc",
+  "_spec": "genji4rn",
+  "_where": "/Users/Zachary/LianShang/收银台",
+  "author": {
+    "name": "zachary.zhang"
+  },
+  "bugs": {
+    "url": "https://github.com/zhang759740844/genji4rn/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "@ant-design/react-native": "^3.1.8",
+    "react-navigation": "^2.18.3",
+    "react-redux": "^5.0.7",
+    "redux": "^4.0.0",
+    "redux-actions": "^2.6.1"
+  },
+  "deprecated": false,
   "description": "one way to use redux easier in react-native",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git@github.com/zhang759740844/genji4rn.git"
-  },
+  "homepage": "https://github.com/zhang759740844/genji4rn#readme",
   "keywords": [
     "redux",
     "react-native",
     "react-navigation"
   ],
-  "author": "zachary.zhang",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/zhang759740844/genji4rn/issues"
+  "main": "index.js",
+  "name": "genji4rn",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com/zhang759740844/genji4rn.git"
   },
-  "homepage": "https://github.com/zhang759740844/genji4rn#readme"
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "2.0.2"
 }
