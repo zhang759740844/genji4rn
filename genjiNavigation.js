@@ -34,6 +34,16 @@ export default class GenjiNavigation {
   }
 
   /**
+   * switch 的方式替换原来路由中的页面
+   * @param {string} tagName 业务组件的别名
+   * @param {string} routerName 业务组件的路由
+   * @param {object} param 路由参数
+   */
+  navigate (tagName, routerName, param) {
+    this._originalNavigationMap.get(tagName).navigate(routerName, param)
+  }
+
+  /**
    * 将 tagName 所在的组件 push 相应页面，并在其他所有 tagName 的组件展示 Mask
    * @param {String} tagName 业务组件的别名
    * @param {String} routerName 路由名

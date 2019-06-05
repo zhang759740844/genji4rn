@@ -1,8 +1,8 @@
 {
   "_from": "genji4rn",
-  "_id": "genji4rn@2.0.1",
+  "_id": "genji4rn@2.1.0",
   "_inBundle": false,
-  "_integrity": "sha512-oWA5sVMdGjEDQeYCUHM6BMBXq2ojdJtaZEHu1PB4e1ncWeECWw7jrM5843Mz3s6P3jlswzTY7a9s23BqTPHs0g==",
+  "_integrity": "sha512-+xSX/hbovsvTDOvidW1UhyD2MVaYkE/1vPb2wYzX+boVk+dffcMxCk+RhV0vsElbHQajD2XB9Sza7ZBxqikgwA==",
   "_location": "/genji4rn",
   "_phantomChildren": {},
   "_requested": {
@@ -19,8 +19,8 @@
     "#USER",
     "/"
   ],
-  "_resolved": "https://registry.npmjs.org/genji4rn/-/genji4rn-2.0.1.tgz",
-  "_shasum": "67943b8fe3a0cb493909636e7a17ac51d3b948dc",
+  "_resolved": "https://registry.npmjs.org/genji4rn/-/genji4rn-2.0.3.tgz",
+  "_shasum": "9499d952c88642305e301c77c87e18a93799170f",
   "_spec": "genji4rn",
   "_where": "/Users/Zachary/LianShang/收银台",
   "author": {
@@ -35,7 +35,8 @@
     "react-navigation": "^2.18.3",
     "react-redux": "^5.0.7",
     "redux": "^4.0.0",
-    "redux-actions": "^2.6.1"
+    "redux-actions": "^2.6.1",
+    "redux-promise-middleware": "^5.1.1"
   },
   "deprecated": false,
   "description": "one way to use redux easier in react-native",
@@ -55,5 +56,5 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "version": "2.0.3"
+  "version": "2.1.0"
 }

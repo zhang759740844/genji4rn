@@ -55,6 +55,16 @@ this.props.navigation.push(yourComponentRouterName, params)
 this.props.genjiNavigation.pushWithMask(componentTag, yourComponentRouterName, params)
 ```
 
+##### navigate
+
+`this.props.genjiNavigation.navigate` 方法是为了应对右屏是通过 `createSwitchNavigator` 创建的组件，并且左屏点击需要切换右屏的情况。常见于左屏是个人中心的列表，右屏根据左屏点击，显示不同功能的页面。
+
+```js
+this.props.genjiNavigaiton.navigate(componentTag, yourComponentRouterName, params)
+```
+
+
+
 ##### pop
 
 pop 方法其实可以直接使用组件内的 `this.props.navigation.pop()` 。但是如果涉及到要隐藏 Mask，那就还是得通过 `genjiNavigation` 完成了：
