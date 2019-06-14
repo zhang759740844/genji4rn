@@ -123,7 +123,7 @@ class Genji {
       initialRouteName: Constant.businessNavigator,
       navigationOptions: {header: null}
     })
-    return (
+    return () => (
       <Provider store={store}>
         <NewTopLevelNavigator />
       </Provider>

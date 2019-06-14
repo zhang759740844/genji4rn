@@ -1,6 +1,6 @@
 {
   "_from": "genji4rn",
-  "_id": "genji4rn@2.1.0",
+  "_id": "genji4rn@2.1.1",
   "_inBundle": false,
   "_integrity": "sha512-+xSX/hbovsvTDOvidW1UhyD2MVaYkE/1vPb2wYzX+boVk+dffcMxCk+RhV0vsElbHQajD2XB9Sza7ZBxqikgwA==",
   "_location": "/genji4rn",
@@ -56,5 +56,5 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "version": "2.1.0"
+  "version": "2.1.1"
 }
